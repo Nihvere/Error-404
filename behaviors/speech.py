@@ -1,11 +1,7 @@
-from entities.dog import Dog
-from entities.cat import Cat
-
 class SpeechBehavior:
-    def __init__(self):
-        self.cat = Cat()
-        self.dog = Dog()
-
-    def speak(self):
-        self.dog.speak()
-        self.cat.speak()
+    def speak(self, name, text):
+        print(f"{name}: {text}")
+    def shout(self, name, text):
+        print(f"{name.upper()}: {text.upper()}")
+    def whisper(self, name, text):
+        print(f"{name.lower()}: {text.lower()}")
