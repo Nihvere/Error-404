@@ -9,8 +9,3 @@ class SpeechBehavior:
     def speak(self):
         self.dog.speak()
         self.cat.speak()
-
-cat = Cat()
-dog = Dog()
-
-dog.speak()
